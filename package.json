@@ -1,0 +1,83 @@
+{
+  "name": "barkodex",
+  "private": true,
+  "version": "1.0.5",
+  "description": "Hızlı Satış ve Stok Otomasyonu",
+  "author": "BiyoTech",
+  "main": "main.cjs",
+  "type": "module",
+  "scripts": {
+    "electron:build": "vite build && electron-builder",
+    "electron:publish": "vite build && electron-builder --win --publish always",
+    "dev": "tsx server.ts",
+    "build": "vite build",
+    "start": "tsx server.ts",
+    "preview": "vite preview",
+    "clean": "rm -rf dist dist-electron server.js",
+    "lint": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@google/genai": "^2.4.0",
+    "@tailwindcss/vite": "^4.3.3",
+    "@vitejs/plugin-react": "^6.1.1",
+    "dotenv": "^17.2.3",
+    "electron-updater": "^6.8.9",
+    "express": "^4.21.2",
+    "lucide-react": "^0.546.0",
+    "motion": "^12.23.24",
+    "react": "^19.0.1",
+    "react-dom": "^19.0.1",
+    "vite": "^8.3.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^22.14.0",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "autoprefixer": "^10.4.21",
+    "concurrently": "^10.0.5",
+    "electron": "^44.4.5",
+    "electron-builder": "^26.15.3",
+    "esbuild": "^0.28.0",
+    "tailwindcss": "^4.3.3",
+    "tsx": "^4.21.0",
+    "typescript": "^7.0.2",
+    "wait-on": "^9.1.0"
+  },
+  "build": {
+    "appId": "com.biyotech.barkodex",
+    "productName": "Barkodex POS",
+    "directories": {
+      "output": "dist-electron"
+    },
+    "publish": [
+      {
+        "provider": "github",
+        "owner": "Biyonik-lab",
+        "repo": "Barkodex"
+      }
+    ],
+    "files": [
+      "dist/**/*",
+      "main.cjs",
+      "server.cjs",
+      "package.json"
+    ],
+    "win": {
+      "target": [
+        "nsis"
+      ],
+      "icon": "icon.ico"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "Barkodex POS",
+      "installerIcon": "icon.ico",
+      "uninstallerIcon": "icon.ico",
+      "artifactName": "Barkodex-POS-Kurulum-v${version}.${ext}"
+    }
+  }
+}
