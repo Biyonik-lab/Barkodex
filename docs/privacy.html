@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gizlilik Politikası - Barkodex POS</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      color: #1f2937;
+      background-color: #f9fafb;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 32px;
+      background: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+      border: 1px solid #e5e7eb;
+    }
+    h1 { color: #111827; border-bottom: 2px solid #0078d4; padding-bottom: 12px; }
+    h2 { color: #1f2937; margin-top: 28px; }
+    p, li { color: #4b5563; }
+    ul { padding-left: 20px; }
+    .badge {
+      display: inline-block;
+      background: #e0f2fe;
+      color: #0369a1;
+      padding: 4px 8px;
+      border-radius: 4px;
+      font-size: 12px;
+      font-weight: 600;
+    }
+    footer {
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid #e5e7eb;
+      font-size: 13px;
+      color: #6b7280;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <span class="badge">Resmi Politika</span>
+  <h1>Barkodex POS Gizlilik Politikası</h1>
+  <p><strong>Son Güncelleme:</strong> 20 Ekim 2026</p>
+
+  <p>BiyoTech olarak, Barkodex POS masaüstü uygulamasını kullanan işletmelerin veri mahremiyetine ve güvenliğine öncelik veriyoruz. Bu metin, uygulamanın veri işleme prensiplerini ve Google Drive API entegrasyonu kapsamını açıklar.</p>
+
+  <h2>1. Yerel Veri Saklama (Offline-First)</h2>
+  <p>Barkodex POS, çevrimdışı çalışma esasına göre tasarlanmıştır:</p>
+  <ul>
+    <li>Stok listeleri, barkodlar, müşteri ve tedarikçi cari hareketleri ile satış fişleri yalnızca kullanıcının bilgisayarında yerel dosya olarak saklanır.</li>
+    <li>Verileriniz harici bir ticari sunucuya, reklam ağına veya analitik platformuna iletilmez.</li>
+  </ul>
+
+  <h2>2. Google Drive API ve Kullanıcı Verileri</h2>
+  <p>Barkodex POS, isteğe bağlı olarak işletme veritabanının buluta yedeklenmesi amacıyla Google Drive API kullanır.</p>
+  <ul>
+    <li><strong>drive.file Kapsamı:</strong> Uygulama, yalnızca kendi oluşturduğu yedek dosyalarına (<code>Barkodex_Yedek_*.json</code>) erişir. Google Drive'ınızdaki diğer kişisel dosyalara, fotoğraflara veya dökümanlara kesinlikle erişemez ve müdahale edemez.</li>
+    <li><strong>userinfo.email Kapsamı:</strong> Oturum açan kullanıcının e-posta adresi, yalnızca arayüzde bağlantı durumunu göstermek amacıyla okunur.</li>
+    <li><strong>Sınırlı Kullanım Taahhüdü:</strong> Uygulamanın Google API'lerinden aldığı bilgileri kullanımı, <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noopener">Google API Servisleri Kullanıcı Verileri Politikası</a>'ndaki Sınırlı Kullanım gereksinimlerine tabidir.</li>
+  </ul>
+
+  <h2>3. Veri Güvenliği ve İzinlerin İptali</h2>
+  <p>Oturum anahtarları (OAuth tokenları) sadece bilgisayarınızda yerel olarak saklanır. Google hesabınızın bağlantısını uygulama içerisindeki Ayarlar sekmesinden dilediğiniz an kesebilir veya <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener">Google Güvenlik Paneli</a> üzerinden yetkiyi kaldırabilirsiniz.</p>
+
+  <h2>4. İletişim</h2>
+  <p>Sorularınız ve destek talepleriniz için:</p>
+  <p><strong>Geliştirici:</strong> BiyoTech<br>
+  <strong>E-posta:</strong> <a href="mailto:biyoniktech@gmail.com">biyoniktech@gmail.com</a></p>
+
+  <footer>
+    &copy; 2026 BiyoTech. Tüm hakları saklıdır.
+  </footer>
+</div>
+
+</body>
+</html>
