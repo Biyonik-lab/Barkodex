@@ -1,0 +1,64 @@
+Türkçe Gizlilik Politikası (Privacy Policy - TR)
+
+
+# Gizlilik Politikası (Privacy Policy) — BarkodexPOS
+
+**Son Güncelleme Tarihi:** 24 Kasım 2026  
+
+**Geliştirici:** BiyoTech  
+
+**İletişim:** biyoniktech@gmail.com  
+
+BiyoTech ("biz", "tarafımız" veya "geliştirici") olarak kullanıcılarımızın gizliliğine ve veri güvenliğine önem veriyoruz. Bu Gizlilik Politikası, **BarkodexPOS** mobil uygulamasını ("Uygulama") kullandığınızda bilgilerinizin nasıl işlendiğini, saklandığını ve korunduğunu açıklamaktadır.
+
+## 1. Toplanan ve İşlenen Veriler
+
+BarkodexPOS, **çevrimdışı öncelikli (offline-first)** bir ticari yönetim ve ön muhasebe uygulamasıdır. Uygulama içerisine girdiğiniz ticari kayıtlar sunucularımıza gönderilmez.
+
+* **İşletme ve Ticari Veriler:** Uygulamaya eklediğiniz ürün bilgileri, stok miktarları, barkod numaraları, satış fişleri, gider kayıtları, müşteri ve tedarikçi cari hesap bilgileri yalnızca **kendi cihazınızın yerel veritabanında** saklanır.
+
+* **Kamera İzni (`android.permission.CAMERA`):** Cihazınızın kamerası yalnızca ürünlerin barkodlarını taramak ve hızlı satış veya stok girişi yapmak amacıyla anlık olarak kullanılır. Kamera görüntüleri kesinlikle kaydedilmez, depolanmaz veya üçüncü taraflarla paylaşılmaz.
+
+* **Satın Alma ve Lisans Bilgileri:** Uygulama içi satın alma (Pro sürüm yükseltme) ve deneme süresi yönetimi için Google Play Faturalandırma (Google Play Billing) altyapısı kullanılır. Kredi kartı veya ödeme bilgileriniz tarafımızca görülmez ve saklanmaz; tüm ödeme işlemleri güvenli bir şekilde Google Play tarafından gerçekleştirilir. Lisans durumunuzu doğrulamak amacıyla yalnızca satın alma jetonu (purchase token) ve cihaz bazlı yerel kullanım süresi bilgileri cihazınızda tutulur.
+
+* **İsteğe Bağlı Yedekleme:** Kullanıcı kendi isteğiyle yedekleme aldığında (JSON veya Google Drive entegrasyonu üzerinden), yedek dosyaları doğrudan kullanıcının kendi cihazına veya kendi kişisel bulut hesabına kaydedilir.
+
+## 2. Verilerin Kullanım Amacı
+
+İşlenen yerel veriler ve izinler yalnızca şu amaçlarla kullanılır:
+
+* Barkod okutma, hızlı satış (POS), stok takibi ve cari hesap yönetimi işlevlerinin çalıştırılması.
+
+* Uygulama içi satın alma işlemlerinin doğrulanması ve Pro sürüm özelliklerinin aktif edilmesi.
+
+* Kullanıcı talebi doğrultusunda fiş oluşturma ve yerel yedekleme/geri yükleme işlemlerinin sağlanması.
+
+## 3. Üçüncü Taraf Hizmetler
+
+Uygulama, temel işlevlerini yerine getirmek için aşağıdaki güvenilir Google altyapılarını kullanır:
+
+* **Google Play Billing Services:** Uygulama içi satın alma ve lisans doğrulama işlemleri için.
+
+* **Google ML Kit (Barcode Scanning):** Cihaz üzerinde (on-device) hızlı ve çevrimdışı barkod tanıma işlemleri için.
+
+* **Open Food Facts API (İsteğe Bağlı):** Bilinmeyen barkodların ürün adını otomatik getirmek amacıyla yalnızca barkod numarası sorgulanabilir; kişisel veri gönderilmez.
+
+## 4. Veri Güvenliği ve Saklama
+
+Tüm stok, satış ve cari verileriniz doğrudan kendi cihazınızda depolandığı için verilerinizin kontrolü tamamen size aittir. Uygulamayı cihazınızdan kaldırdığınızda (yerel veya bulut yedeği almadıysanız) cihazınızdaki tüm yerel veriler işletim sistemi tarafından silinir.
+
+## 5. Çocukların Gizliliği
+
+BarkodexPOS işletmelere yönelik ticari bir yazılımdır ve 13 yaşın altındaki çocuklara yönelik değildir. Bilerek 13 yaşın altındaki bireylerden kişisel veri toplanmaz.
+
+## 6. Politika Değişiklikleri
+
+Bu Gizlilik Politikası zaman zaman güncellenebilir. Güncellemeler bu sayfa üzerinden yayımlandığı tarihte yürürlüğe girer.
+
+## 7. İletişim
+
+Gizlilik politikamız veya uygulama ile ilgili her türlü soru ve talebiniz için bizimle iletişime geçebilirsiniz:  
+
+**E-posta:** biyoniktech@gmail.com  
+
+**Geliştirici:** BiyoTech
