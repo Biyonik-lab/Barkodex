@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BarkodexPOS - Kullanım Koşulları / Terms of Service</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --surface-color: #1e293b;
+            --text-primary: #f8fafc;
+            --text-secondary: #cbd5e1;
+            --text-muted: #94a3b8;
+            --accent-color: #10b981;
+            --border-color: #334155;
+        }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            line-height: 1.65;
+            padding: 2rem 1rem;
+        }
+        .container {
+            max-width: 840px;
+            margin: 0 auto;
+        }
+        header {
+            text-align: center;
+            padding: 2rem 1.5rem;
+            background-color: var(--surface-color);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            margin-bottom: 1.5rem;
+        }
+        .badge {
+            display: inline-block;
+            background-color: rgba(16, 185, 129, 0.15);
+            color: var(--accent-color);
+            padding: 0.25rem 0.75rem;
+            border-radius: 999px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            margin-bottom: 0.75rem;
+        }
+        header h1 {
+            font-size: 1.9rem;
+            color: var(--text-primary);
+            margin-bottom: 0.4rem;
+        }
+        header p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+        .controls {
+            margin-top: 1.25rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 0.75rem;
+            flex-wrap: wrap;
+        }
+        .lang-switch {
+            display: inline-flex;
+            background-color: var(--bg-color);
+            padding: 0.3rem;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+            gap: 0.25rem;
+        }
+        .lang-btn {
+            background: transparent;
+            color: var(--text-muted);
+            border: none;
+            padding: 0.45rem 1.1rem;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        .lang-btn.active {
+            background-color: var(--accent-color);
+            color: #064e3b;
+        }
+        .nav-link {
+            background-color: var(--bg-color);
+            color: var(--text-secondary);
+            border: 1px solid var(--border-color);
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            font-size: 0.88rem;
+            text-decoration: none;
+            transition: border-color 0.2s;
+        }
+        .nav-link:hover {
+            border-color: var(--accent-color);
+            text-decoration: none;
+        }
+        .policy-card {
+            background-color: var(--surface-color);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 2.25rem 2rem;
+            margin-bottom: 1.5rem;
+        }
+        .meta-info {
+            background-color: var(--bg-color);
+            border-left: 3px solid var(--accent-color);
+            padding: 0.9rem 1.2rem;
+            border-radius: 0 8px 8px 0;
+            margin-bottom: 1.5rem;
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+        }
+        .meta-info p {
+            margin-bottom: 0.25rem;
+        }
+        .meta-info p:last-child {
+            margin-bottom: 0;
+        }
+        h2 {
+            color: var(--accent-color);
+            font-size: 1.2rem;
+            margin: 1.65rem 0 0.65rem;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 0.4rem;
+        }
+        p {
+            color: var(--text-secondary);
+            margin-bottom: 0.85rem;
+            font-size: 0.95rem;
+        }
+        ul {
+            margin-left: 1.4rem;
+            margin-bottom: 1rem;
+        }
+        li {
+            color: var(--text-secondary);
+            margin-bottom: 0.5rem;
+            font-size: 0.95rem;
+        }
+        strong {
+            color: var(--text-primary);
+        }
+        a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .hidden {
+            display: none;
+        }
+        footer {
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <span class="badge">BiyoTech</span>
+            <h1>BarkodexPOS</h1>
+            <p>Kullanım Koşulları &bull; Terms of Service</p>
+            <div class="controls">
+                <div class="lang-switch">
+                    <button id="btn-tr" class="lang-btn active" onclick="setLang('tr')">Türkçe (TR)</button>
+                    <button id="btn-en" class="lang-btn" onclick="setLang('en')">English (EN)</button>
+                </div>
+                <a href="index.html" class="nav-link" id="privacy-nav">Gizlilik Politikası</a>
+            </div>
+        </header>
+
+        <!-- TÜRKÇE BÖLÜM -->
+        <main id="content-tr" class="policy-card">
+            <div class="meta-info">
+                <p><strong>Son Güncelleme:</strong> 25 Kasım 2026</p>
+                <p><strong>Geliştirici:</strong> BiyoTech</p>
+                <p><strong>E-posta:</strong> <a href="mailto:biyoniktech@gmail.com">biyoniktech@gmail.com</a></p>
+            </div>
+
+            <p>Lütfen <strong>BarkodexPOS - Stok ve Satış</strong> mobil uygulamasını ("Uygulama") kullanmadan önce bu Kullanım Koşullarını ("Koşullar") dikkatlice okuyunuz. Uygulamayı indirerek, yükleyerek veya kullanarak bu Koşullara bağlı kalmayı kabul etmiş sayılırsınız.</p>
+
+            <h2>1. Hizmetin Kapsamı ve Lisans</h2>
+            <p>BiyoTech ("Geliştirici"), Uygulamayı kişisel veya ticari stok takibi, barkod okutma ve satış yönetimi amacıyla kullanmanız için size münhasır olmayan, devredilemez ve geri alınabilir bir kullanım lisansı verir.</p>
+
+            <h2>2. Ücretli Özellikler ve Satın Alımlar</h2>
+            <ul>
+                <li>Uygulama içi satın alımlar veya ömür boyu lisans (Pro sürüm) ödemeleri, Google Play ödeme altyapısı üzerinden güvenli bir şekilde gerçekleştirilir.</li>
+                <li>Dijital ürün ve lisans satın alımlarında iade süreçleri, Google Play Geri Ödeme Politikalarına tabidir.</li>
+            </ul>
+
+            <h2>3. Veri Güvenliği ve Yedekleme Sorumluluğu</h2>
+            <ul>
+                <li>Uygulama içerisinde kaydedilen ürün, barkod, stok ve satış verilerinin doğruluğu ve düzenli olarak yedeklenmesi kullanıcının kendi sorumluluğundadır.</li>
+                <li>Cihaz arızası, uygulamanın silinmesi veya kullanıcı hatasından kaynaklanan veri kayıplarından Geliştirici sorumlu tutulamaz.</li>
+            </ul>
+
+            <h2>4. Fikri Mülkiyet Hakları</h2>
+            <p>Uygulamanın yazılım kodu, tasarımı, arayüzü, logosu ve tüm ticari markaları BiyoTech'e aittir. İzinsiz kopyalanması, tersine mühendislik yapılması veya dağıtılması yasaktır.</p>
+
+            <h2>5. Sorumluluğun Sınırlandırılması</h2>
+            <p>Uygulama "olduğu gibi" sunulmaktadır. Geliştirici; uygulamanın kesintisiz veya hatasız çalışacağını garanti etmez ve kullanımdan doğabilecek doğrudan veya dolaylı ticari zararlardan, kar kaybından ya da mali uyuşmazlıklardan sorumlu değildir.</p>
+
+            <h2>6. Değişiklikler ve İletişim</h2>
+            <p>Geliştirici, bu Koşulları dilediği zaman güncelleme hakkını saklı tutar. Sorularınız için bizimle iletişime geçebilirsiniz:</p>
+            <p>
+                <strong>Geliştirici:</strong> BiyoTech<br>
+                <strong>E-posta:</strong> <a href="mailto:biyoniktech@gmail.com">biyoniktech@gmail.com</a>
+            </p>
+        </main>
+
+        <!-- İNGİLİZCE BÖLÜM -->
+        <main id="content-en" class="policy-card hidden" lang="en">
+            <div class="meta-info">
+                <p><strong>Last Updated:</strong> November 25, 2026</p>
+                <p><strong>Developer:</strong> BiyoTech</p>
+                <p><strong>Email:</strong> <a href="mailto:biyoniktech@gmail.com">biyoniktech@gmail.com</a></p>
+            </div>
+
+            <p>Please read these Terms of Service ("Terms") carefully before using the <strong>BarkodexPOS - Stok ve Satış</strong> mobile application ("App") operated by BiyoTech ("Developer"). By downloading, installing, or using the App, you agree to be bound by these Terms.</p>
+
+            <h2>1. License and Scope of Use</h2>
+            <p>The Developer grants you a limited, non-exclusive, non-transferable, revocable license to use the App for personal or commercial inventory tracking, barcode scanning, and sales management purposes.</p>
+
+            <h2>2. In-App Purchases and Payments</h2>
+            <ul>
+                <li>Any in-app purchases or lifetime licenses (Pro version) are processed securely through the Google Play billing system.</li>
+                <li>Refund requests for digital content and licenses are governed by Google Play's Refund Policies.</li>
+            </ul>
+
+            <h2>3. Data Responsibility and Backups</h2>
+            <ul>
+                <li>You are solely responsible for the accuracy and regular backup of all product, barcode, inventory, and sales data entered into the App.</li>
+                <li>The Developer shall not be held liable for any data loss resulting from device failure, app uninstallation, or user error.</li>
+            </ul>
+
+            <h2>4. Intellectual Property</h2>
+            <p>All rights, title, and interest in and to the App, including its source code, design, user interface, logos, and trademarks, are the exclusive property of BiyoTech. Reverse engineering, decompiling, or unauthorized redistribution is strictly prohibited.</p>
+
+            <h2>5. Limitation of Liability</h2>
+            <p>The App is provided on an "AS IS" and "AS AVAILABLE" basis without warranties of any kind. In no event shall the Developer be liable for any direct, indirect, incidental, or consequential damages, including loss of profits or business interruption, arising out of the use or inability to use the App.</p>
+
+            <h2>6. Changes and Contact</h2>
+            <p>We reserve the right to modify or replace these Terms at any time. If you have any questions regarding these Terms, please contact us:</p>
+            <p>
+                <strong>Developer:</strong> BiyoTech<br>
+                <strong>Email:</strong> <a href="mailto:biyoniktech@gmail.com">biyoniktech@gmail.com</a>
+            </p>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 BiyoTech. Tüm hakları saklıdır. / All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script>
+        function setLang(lang) {
+            const trContent = document.getElementById('content-tr');
+            const enContent = document.getElementById('content-en');
+            const btnTr = document.getElementById('btn-tr');
+            const btnEn = document.getElementById('btn-en');
+            const privacyNav = document.getElementById('privacy-nav');
+
+            if (lang === 'en') {
+                trContent.classList.add('hidden');
+                enContent.classList.remove('hidden');
+                btnEn.classList.add('active');
+                btnTr.classList.remove('active');
+                privacyNav.textContent = 'Privacy Policy';
+                document.documentElement.lang = 'en';
+            } else {
+                enContent.classList.add('hidden');
+                trContent.classList.remove('hidden');
+                btnTr.classList.add('active');
+                btnEn.classList.remove('active');
+                privacyNav.textContent = 'Gizlilik Politikası';
+                document.documentElement.lang = 'tr';
+            }
+        }
+    </script>
+</body>
+</html>
